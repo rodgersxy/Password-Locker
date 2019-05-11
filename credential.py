@@ -21,4 +21,11 @@ class Credential:
 
         gen_pass=''.join(random.choice(char) for _ in range(size))
 
-        return gen_pass    
+        return gen_pass
+
+    @classmethod
+    def find_by_email(cls,number):
+
+        for credential in cls.credential_list:
+            if credential.email == number:
+                return credential   
