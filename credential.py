@@ -45,4 +45,12 @@ class Credential:
     @classmethod
     def copy_email(cls,number):
         credential_found = Credential.find_by_email(number)
-        pyperclip.copy(credential_found.email)                  
+        pyperclip.copy(credential_found.email)
+
+    def __init__(self,email,platform,password):
+
+
+
+        self.email = email
+        self.platform = platform
+        self.password = password                    
