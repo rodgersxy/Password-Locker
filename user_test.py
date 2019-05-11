@@ -10,4 +10,8 @@ class TestUser(unittest.TestCase):
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
 
-        
+    def setUp(self):
+        '''
+        Set up method to run before each test case.
+        '''
+        self.user_list = User("Rodgers","Nyakundi","0726746234","rodgersny99@gmail.com","password")
