@@ -28,4 +28,9 @@ class Credential:
 
         for credential in cls.credential_list:
             if credential.email == number:
-                return credential   
+                return credential
+
+    @classmethod
+    def display_credential(cls):
+
+        return cls.credential_list               
