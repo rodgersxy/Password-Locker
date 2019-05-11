@@ -31,4 +31,19 @@ class User:
 
     @classmethod
     def display_users(cls):
-        return cls.user_list           
+        return cls.user_list
+
+    @classmethod
+    def copy_email(cls,number):
+        user_found = user.find_by_number(number)
+        pyperclip.copy(user_found.email)
+
+
+
+    def __init__(self,first_name,last_name,phone_number,email,password):
+
+        self.first_name = first_name
+        self.last_name = last_name
+        self.phone_number = phone_number
+        self.email = email
+        self.password = password
