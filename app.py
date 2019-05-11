@@ -72,7 +72,32 @@ def main():
 
     print("Heeey Hallo welcome to your user list. What is your name?")
 
-    user_name = input()                    
+    user_name = input()
+
+    print(f"Hello {user_name}. What would you like to do")
+
+    print('\n')
+
+    while True:
+
+        print("Use these short codes :")
+        print("CU - Create a New User")
+        print("DU - Display Users")
+        print("FU - Find a User")
+        print("CA - Create Social Account")
+        print("DA - Display Social Account")
+        print("DE - Delete Social Account")
+        print("EX - Exit the list")
+
+
+        short_code = input().lower()
+
+        if short_code == 'cu'
+
+            print("New User")
+            print("-"*10)
+
+
 
 
 
