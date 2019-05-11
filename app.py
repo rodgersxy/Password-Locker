@@ -51,7 +51,30 @@ def check_existing_credential(number):
 
     return Credential.credential_exist(number)
 
-                            
+def display_users():
+
+    return User.display_users()
+
+def display_credential():
+
+    return Credential.display_credential()
+
+def test_copy_email():
+
+    return User.copy_email()
+
+def test_copy_email():
+
+    return Credential.copy_email()
+
+
+def main():
+
+    print("Heeey Hallo welcome to your user list. What is your name?")
+
+    user_name = input()                    
+
+
 
 
 
