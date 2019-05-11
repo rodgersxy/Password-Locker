@@ -186,7 +186,70 @@ def main():
 
                     print ('\n')
 
-                    print(f" New ")
+                    print(f" New Credential for {e_mail} {p_account} created. Password is {p_word}")
+
+                    print ('\n')
+
+                elif pass_auto == 'nn':
+
+                    print ("Enter Email Address (Username)....")
+                    e_mail = input()
+
+
+                    print("Platform Account (Social Account)....")
+                    p_account = input()
+
+                    print("Enter Password......")
+                    p_word = input()
+
+                    save_credential(create_credential(e_mail,p_account,p_word))
+
+
+                    print ('\n')
+
+                    print(f" New Credential for {e_mail} {p_account} created").
+
+                    print('\n')
+
+                elif pass_auto == "ex":
+
+                    print("Bye ........")
+
+                else:
+                    print("Wrong option try again")
+
+                    print("Do you want passwor to auto-generate ..use below options")
+
+                    print("Option 1: YY -- Yes")
+                    print("Option 2: NN -- No")
+                    print("Option 3: EX -- Exit the social Account")
+
+                    pass_auto = input().lower()
+
+                elif short_code == 'do':
+
+                    if display_credential():
+                        print("Here is the of all your credential")
+
+                        print('\n')
+
+                        for credential in display_credential():
+                            print(f"{credential.email} {credential.platform} ...{credential.password})
+                            print('\n')
+                else:
+
+                    print('\n')
+
+                    print("You dont deem to have any credential saved yet")
+                    print('\n')
+
+                elif short_code                 
+
+
+
+
+
+
 
 
 
