@@ -31,6 +31,18 @@ class Credential:
                 return credential
 
     @classmethod
+    def credential_exist(cls,number):
+
+        for credential in cls.credential_list:
+            if credential.email == number:
+                return True
+
+    @classmethod
     def display_credential(cls):
 
-        return cls.credential_list               
+        return cls.credential_list
+
+    @classmethod
+    def copy_email(cls,number):
+        credential_found = Credential.find_by_email(number)
+        pyperclip.copy(credential_found.email)                  
