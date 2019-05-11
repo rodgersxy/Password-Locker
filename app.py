@@ -154,7 +154,41 @@ def main():
 
                 print('-' *20)
 
-                print(f"Phone number...........{search_user.phone_number}")        
+                print(f"Phone number...........{search_user.phone_number}")
+
+                print(f"Email address .........{search_user.email}")
+
+            else:
+
+                print("That user does not exist")
+
+            elif short_code == 'ca':
+
+                print("Do you want password to auto-generate..use below optiona")
+                print("Option 1: YY -- Yes")
+                print("OPtion 2: NN -- No")
+                print("Option 3: EX -- Exit the Social Acounts")
+
+                pass_auto = input().lower()
+
+                if pass_auto == 'yy':
+                    print("Password will be auto generated")
+                    print("Enter Email Address (Username).....")
+                    e_mail = input()
+
+                    print("Platform Account (Social Account)...")
+                    p_account = input()
+
+                    print("Enter Password....")
+                    p_word = generate_password()
+
+                    save_credential(create_credential(e_mail,p_account,p_word))
+
+                    print ('\n')
+
+                    print(f" New ")
+
+
 
 
 
