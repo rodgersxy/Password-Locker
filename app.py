@@ -92,7 +92,7 @@ def main():
 
         short_code = input().lower()
 
-        if short_code == 'cu'
+        if short_code == 'cu':
 
             print("New User")
             print("-"*10)
@@ -112,7 +112,7 @@ def main():
             print("Password .....")
             e_pass = input()
 
-            save_users(create_user(f_name,l_name,p_number,e_address,e-pass))
+            save_users(create_user(f_name,l_name,p_number,e_address,e_pass))
 
             print('\n')
 
@@ -162,7 +162,7 @@ def main():
 
                 print("That user does not exist")
 
-            elif short_code == 'ca':
+        elif short_code == 'ca':
 
                 print("Do you want password to auto-generate..use below optiona")
                 print("Option 1: YY -- Yes")
@@ -207,7 +207,7 @@ def main():
 
                     print ('\n')
 
-                    print(f" New Credential for {e_mail} {p_account} created").
+                    print(f" New Credential for {e_mail} {p_account} created")
 
                     print('\n')
 
@@ -226,40 +226,46 @@ def main():
 
                     pass_auto = input().lower()
 
-                elif short_code == 'do':
+        elif short_code == 'da':
 
-                    if display_credential():
-                        print("Here is the of all your credential")
+            if display_credential():
+                print("Here is a list of all your credential")
 
+                print('\n')
+
+                for credential in display_credential():
+
+                        print(f"{credential.email} {credential.platform} .....{credential.password}")
                         print('\n')
 
-                        for credential in display_credential():
-                            print(f"{credential.email} {credential.platform} ...{credential.password})
-                            print('\n')
-                else:
+            else:
 
-                    print('\n')
+                print('\n')
 
-                    print("You dont deem to have any credential saved yet")
-                    print('\n')
+                print("You don't seem to have any credentials saved yet")
 
-                elif short_code                 
+                print('\n')
 
+        elif short_code == "de":
 
+            print("Starting to delete .......")
+            print("Enter Email .......")
+            del_name = input(" ")
 
+            delete_credential(del_name)
 
+        elif short_code == "ex":
 
+            print("Bye .......")
 
+            break
 
+        else:
 
-
-
-
-
-
-
-
+            print("I really didn't get that. Please use the short codes")
 
 
 if __name__ == '__main__':
+
     main()
+             
