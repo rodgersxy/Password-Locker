@@ -27,7 +27,7 @@ After running app.py the app will prompt you create user,display,find user,exit 
 not at the moment
 
 ## Technologies used:
-Python3
+Python3, 
 ATOM text editor
 ## Contact details 
 rodgersny99@gmail.com
